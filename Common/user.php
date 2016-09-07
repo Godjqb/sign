@@ -62,6 +62,17 @@ class User{
         if($rel['num']==1){
             $this->id=$rel['result']['id'];
             $rel=$sign->select("user","password","id='.$this->id.'")->getResult();
+            if($password==$rel['result']['password']){
+                $sign->update('users',["lasttime"=>time()],["id"=>$this->id]);
+                $_SESSION['id']=$this->id;
+                return $this;
+            } else {
+                echo json_encode(['status'=>false,'msg'=>'wrong password']);
+                return false;
+            }
+        } else {
+            echo json_encode(['status'=>false,'msg'=>'username can\'t be empty']);
+            return false;
         }
     }
 
