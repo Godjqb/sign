@@ -1,0 +1,15 @@
+div {
+    border: 1px solid red;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+}
+
+.err {
+    color: red;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
