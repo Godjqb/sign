@@ -11,7 +11,7 @@ class Database{
     private $db_host='localhost';
     private $db_user='root';
     private $db_psw='1234';
-    private $db_database='ll';
+    private $db_database='new';
 
     protected static $db;
     private $con,$result=array(),$resultNum;
@@ -36,7 +36,7 @@ class Database{
         }
     }
 
-    private function error(){
+    public function error(){
         return mysqli_error($this->con);
     }
 

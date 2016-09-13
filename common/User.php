@@ -12,7 +12,7 @@ class User{
 
     private $id,$user,$email,$tel,$psw,$lasttime,$regtime,$level,$moreinfo;
 
-    private function __construct(){}
+    public function __construct(){}
     private function __clone(){}
     public static function getInstance(){
         if(self::$users){
@@ -49,7 +49,7 @@ class User{
             'level'=>$level,
             'moreinfo'=>"empty"
         );
-        return Factory::createDatabase()->insert("user",$data);
+        return Factory::createDatabase()->insert("users",$data);
     }
 
     public function signIn($userInput,$password){
@@ -74,6 +74,10 @@ class User{
             echo json_encode(['status'=>false,'msg'=>'username can\'t be empty']);
             return false;
         }
+    }
+
+    public function test(){
+        return 1;
     }
 
 }

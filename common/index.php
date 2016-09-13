@@ -5,16 +5,31 @@
  * Date: 16-7-20
  * Time: 下午11:50
  */
-require_once 'Database.php';
-$connect=new Database();
-$con=$connect->connect();
-if($con){
-   echo 'succeed';
-} else {
-    $err=mysqli_connect_error();
-    echo 'failed '.$err;
-}
-echo '<br />';
+
+//use Common\Factory;
+use Common\User;
+$test=User::getInstance()->test();
+echo $test;
+
+//$regUser=Factory::createUser()->regUser('God','1234','1234@123.com');
+//print_r($regUser);
+//if($regUser){
+//    echo 'succed';
+//} else {
+//    echo Factory::createDatabase()->error();
+//}
+//
+
+//require_once 'Database.php';
+//$connect=new Database();
+//$con=$connect->connect();
+//if($con){
+//   echo 'succeed';
+//} else {
+//    $err=mysqli_connect_error();
+//    echo 'failed '.$err;
+//}
+//echo '<br />';
 
 //$sql='SELECT * FROM members';
 //$res=$connect->query($sql);
@@ -120,11 +135,7 @@ echo '<br />';
 //echo $sql;
 //$connect->query($sql);
 
-echo '<br />';
-$connect->exportArr($connect->select('members'));
+//echo '<br />';
+//$connect->exportArr($connect->select('members'));
 
-
-
-
-
-
+?>
