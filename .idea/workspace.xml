@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e028e91a-3f9e-4359-910c-161fdf90c69a" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Common/Database.php" afterPath="$PROJECT_DIR$/common/Database.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Common/Factory.php" afterPath="$PROJECT_DIR$/common/Factory.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Common/index.php" afterPath="$PROJECT_DIR$/common/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Common/user.php" afterPath="$PROJECT_DIR$/common/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/Database.php" afterPath="$PROJECT_DIR$/Common/Database.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/Factory.php" afterPath="$PROJECT_DIR$/Common/Factory.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/User.php" afterPath="$PROJECT_DIR$/Common/User.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/index.php" afterPath="$PROJECT_DIR$/Common/index.php" />
     </list>
     <ignored path="mysql_test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,10 +40,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Database.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/Database.php">
+      <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
+            <state relative-caret-position="238">
               <caret line="92" column="14" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="14" />
               <folding>
                 <marker date="1473476213214" expanded="true" signature="2280:2292" ph="INSERT INTO ${$tb}... " />
@@ -63,8 +62,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/User.php">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Common/User.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
               <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
@@ -74,7 +73,7 @@
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/index.php">
+        <entry file="file://$PROJECT_DIR$/Common/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
               <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
@@ -84,7 +83,7 @@
         </entry>
       </file>
       <file leaf-file-name="Factory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/Factory.php">
+        <entry file="file://$PROJECT_DIR$/Common/Factory.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -257,7 +256,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="Common" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -389,12 +388,12 @@
       <workItem from="1473475455067" duration="1023000" />
       <workItem from="1473677134278" duration="2845000" />
       <workItem from="1473741901963" duration="934000" />
-      <workItem from="1473753426065" duration="991000" />
+      <workItem from="1473753426065" duration="1156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116662000" />
+    <option name="totallyTimeSpent" value="116827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
@@ -438,21 +437,21 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/common/Database.php</url>
+          <url>file://$PROJECT_DIR$/Common/Database.php</url>
           <line>61</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/common/User.php</url>
+          <url>file://$PROJECT_DIR$/Common/User.php</url>
           <line>26</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/common/User.php</url>
+          <url>file://$PROJECT_DIR$/Common/User.php</url>
           <line>33</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/common/User.php</url>
+          <url>file://$PROJECT_DIR$/Common/User.php</url>
           <line>14</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -469,14 +468,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/User.php">
+    <entry file="file://$PROJECT_DIR$/Common/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/Database.php">
+    <entry file="file://$PROJECT_DIR$/Common/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -496,7 +495,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/index.php">
+    <entry file="file://$PROJECT_DIR$/Common/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1584">
           <caret line="93" column="3" selection-start-line="93" selection-start-column="3" selection-end-line="93" selection-end-column="3" />
@@ -504,7 +503,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/Database.php">
+    <entry file="file://$PROJECT_DIR$/Common/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -524,7 +523,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/index.php">
+    <entry file="file://$PROJECT_DIR$/Common/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="61" column="2" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="2" />
@@ -532,7 +531,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/Database.php">
+    <entry file="file://$PROJECT_DIR$/Common/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="85" column="25" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
@@ -552,7 +551,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/index.php">
+    <entry file="file://$PROJECT_DIR$/Common/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -560,35 +559,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1473476213214" expanded="true" signature="2280:2292" ph="INSERT INTO ${$tb}... " />
-            <marker date="1473476213214" expanded="true" signature="2280:2301" ph="INSERT INTO ${$tb}... " />
-            <marker date="1473476213214" expanded="true" signature="2280:2302" ph="INSERT INTO ${$tb}... " />
-            <marker date="1473476213214" expanded="true" signature="2280:2320" ph="INSERT INTO ${$tb}... " />
-            <marker date="1473476213214" expanded="true" signature="2280:2321" ph="INSERT INTO ${$tb}... " />
-            <marker date="1473476213214" expanded="true" signature="2280:2331" ph="INSERT INTO ${$tb}... " />
-            <marker date="1473476213214" expanded="true" signature="2280:2332" ph="INSERT INTO ${$tb}... " />
-            <marker date="1473476213214" expanded="true" signature="3057:3069" ph="DELETE FROM " />
-            <marker date="1473476213214" expanded="true" signature="3057:3074" ph="DELETE FROM " />
-            <marker date="1473476213214" expanded="true" signature="3057:3082" ph="DELETE FROM " />
-            <marker date="1473476213214" expanded="true" signature="3057:3084" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/Database.php">
+    <entry file="file://$PROJECT_DIR$/Common/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -608,7 +579,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/index.php">
+    <entry file="file://$PROJECT_DIR$/Common/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
           <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
@@ -616,7 +587,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/Database.php">
+    <entry file="file://$PROJECT_DIR$/Common/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1473476213214" expanded="true" signature="2280:2292" ph="INSERT INTO ${$tb}... " />
+            <marker date="1473476213214" expanded="true" signature="2280:2301" ph="INSERT INTO ${$tb}... " />
+            <marker date="1473476213214" expanded="true" signature="2280:2302" ph="INSERT INTO ${$tb}... " />
+            <marker date="1473476213214" expanded="true" signature="2280:2320" ph="INSERT INTO ${$tb}... " />
+            <marker date="1473476213214" expanded="true" signature="2280:2321" ph="INSERT INTO ${$tb}... " />
+            <marker date="1473476213214" expanded="true" signature="2280:2331" ph="INSERT INTO ${$tb}... " />
+            <marker date="1473476213214" expanded="true" signature="2280:2332" ph="INSERT INTO ${$tb}... " />
+            <marker date="1473476213214" expanded="true" signature="3057:3069" ph="DELETE FROM " />
+            <marker date="1473476213214" expanded="true" signature="3057:3074" ph="DELETE FROM " />
+            <marker date="1473476213214" expanded="true" signature="3057:3082" ph="DELETE FROM " />
+            <marker date="1473476213214" expanded="true" signature="3057:3084" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
@@ -636,7 +635,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/index.php">
+    <entry file="file://$PROJECT_DIR$/Common/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -644,7 +643,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/Database.php">
+    <entry file="file://$PROJECT_DIR$/Common/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
@@ -664,7 +663,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/index.php">
+    <entry file="file://$PROJECT_DIR$/Common/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -672,7 +671,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/Database.php">
+    <entry file="file://$PROJECT_DIR$/Common/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -692,7 +691,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/Database.php">
+    <entry file="file://$PROJECT_DIR$/Common/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
@@ -712,7 +711,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/index.php">
+    <entry file="file://$PROJECT_DIR$/Common/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -720,7 +719,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/Database.php">
+    <entry file="file://$PROJECT_DIR$/Common/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -740,7 +739,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/index.php">
+    <entry file="file://$PROJECT_DIR$/Common/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
@@ -748,7 +747,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/Database.php">
+    <entry file="file://$PROJECT_DIR$/Common/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
@@ -768,7 +767,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/index.php">
+    <entry file="file://$PROJECT_DIR$/Common/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -779,7 +778,7 @@
     <entry file="file://$PROJECT_DIR$/mysql_test/mysql_connect.php" />
     <entry file="file://$PROJECT_DIR$/mysql_export.php" />
     <entry file="file://$PROJECT_DIR$/mysql_connect.php" />
-    <entry file="file://$PROJECT_DIR$/common/index.php">
+    <entry file="file://$PROJECT_DIR$/Common/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -828,7 +827,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/Factory.php">
+    <entry file="file://$PROJECT_DIR$/Common/Factory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -838,25 +837,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/index.php">
+    <entry file="file://$PROJECT_DIR$/Common/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
+        <state relative-caret-position="238">
           <caret line="92" column="14" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="14" />
           <folding>
             <marker date="1473476213214" expanded="true" signature="2280:2292" ph="INSERT INTO ${$tb}... " />
@@ -871,6 +854,22 @@
             <marker date="1473476213214" expanded="true" signature="3057:3082" ph="DELETE FROM " />
             <marker date="1473476213214" expanded="true" signature="3057:3084" ph="DELETE FROM " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
