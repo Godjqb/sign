@@ -6,11 +6,17 @@
  * Time: 下午11:50
  */
 
+//namespace Common;
+//require_once 'User.php';
+//$test=User::getInstance();
+//echo $test->test();
+
 use Common\User;
 $test=User::getInstance()->test();
+echo $test;
+
 //use Common\Factory;
 //$test=Factory::createUser()->test();
-echo $test;
 
 //$regUser=Factory::createUser()->regUser('God','1234','1234@123.com');
 //print_r($regUser);

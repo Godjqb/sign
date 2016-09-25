@@ -5,7 +5,6 @@
  * Date: 16-9-5
  * Time: 下午11:09
  */
-
 namespace Common;
 
 class Factory{
