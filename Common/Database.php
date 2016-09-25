@@ -75,7 +75,7 @@ class Database{
                 $this->result[$i][$key[$j]]=$value[$key[$j]];
             }
         }
-        return $this->result;
+        return $this;
     }
 
     public function exportArr($arr){
@@ -90,7 +90,7 @@ class Database{
     public function insert($tb,$data){
         $keys=implode(',',array_keys($data));
         $value=implode(',',array_values($data));
-        $sql='INSERT INTO '.$tb.' ('.$keys.') VALUES ('.$value.');';
+        $sql='INSERT '.$tb.' ('.$keys.') VALUES ('.$value.');';
         if($this->query($sql)){
             return true;
         } else {
@@ -107,7 +107,7 @@ class Database{
         $sql=trim($sql,',');
         $wherekeys=implode(',',array_keys($where));
         $wherevalues=implode(',',array_values($where));
-        $sql.=' where ('.$wherekeys.')=('.$wherevalues.');';
+        $sql.=' WHERE ('.$wherekeys.')=('.$wherevalues.');';
         if($this->query($sql)){
             return true;
         } else {

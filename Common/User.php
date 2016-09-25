@@ -10,9 +10,10 @@ namespace Common;
 class User{
     protected static $users;
 
-    private $id,$user,$email,$tel,$psw,$lasttime,$regtime,$level,$moreinfo;
+    private $id;
+//,$user,$email,$tel,$psw,$lasttime,$regtime,$level,$moreinfo
 
-    public function __construct(){}
+    private function __construct(){}
     private function __clone(){}
     public static function getInstance(){
         if(self::$users){

@@ -6,9 +6,10 @@
  * Time: 下午11:50
  */
 
-//use Common\Factory;
 use Common\User;
 $test=User::getInstance()->test();
+//use Common\Factory;
+//$test=Factory::createUser()->test();
 echo $test;
 
 //$regUser=Factory::createUser()->regUser('God','1234','1234@123.com');
