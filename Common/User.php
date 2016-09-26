@@ -77,8 +77,8 @@ class User{
         }
     }
 
-    public function test(){
-        return 1;
+    public static function test(){
+        echo 1;
     }
 
 }

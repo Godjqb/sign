@@ -5,15 +5,19 @@
  * Date: 16-7-20
  * Time: 下午11:50
  */
-
 //namespace Common;
-//require_once 'User.php';
+
+define('BASEDIR',__DIR__);
+require_once BASEDIR.'/Loader.php';
+spl_autoload_register('\\Common\\Loader::autoload');
+
+
+//spl_autoload_register('\\Loader::autoload');
 //$test=User::getInstance();
 //echo $test->test();
 
-use Common\User;
-$test=User::getInstance()->test();
-echo $test;
+//User::test();
+
 
 //use Common\Factory;
 //$test=Factory::createUser()->test();
