@@ -54,16 +54,19 @@ class User{
     }
 
     public function signIn($userInput,$password){
+
         $sign=Factory::createDatabase();
+
         if(preg_match('/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/',$userInput)){
             $rel=$sign->select("users","id","email='.$userInput.'")->getResult();
         } else {
-            $rel=$sign->select("users","id","username='.$userInput.'")->getResult();
+            $rel=$sign->select("users","id","username='$userInput'")->getResult();
         }
         if($rel['num']==1){
-            $this->id=$rel['result']['id'];
-            $rel=$sign->select("user","password","id='.$this->id.'")->getResult();
-            if($password==$rel['result']['password']){
+//            echo $rel['result'][0]['id'];
+            $this->id=$rel['result'][0]['id'];
+            $rel=$sign->select("users","password","id='$this->id'")->getResult();
+            if($password==$rel['result'][0]['password']){
                 $sign->update('users',["lasttime"=>time()],["id"=>$this->id]);
                 $_SESSION['id']=$this->id;
                 return $this;
@@ -71,10 +74,27 @@ class User{
                 echo json_encode(['status'=>false,'msg'=>'wrong password']);
                 return false;
             }
-        } else {
-            echo json_encode(['status'=>false,'msg'=>'username can\'t be empty']);
-            return false;
         }
+
+//        if($rel['num']==1){
+//            $sign->exportArr($rel['result']);
+//            echo $rel[1]['id'];
+////            var_dump($sign);
+//            $this->id=$rel['result']['id'];
+//            //var_dump($this->id);
+//            $rel=$sign->select("users","password","id='.$this->id.'")->getResult();
+//            if($password==$rel['result']['password']){
+//                $sign->update('users',["lasttime"=>time()],["id"=>$this->id]);
+//                $_SESSION['id']=$this->id;
+//                return $this;
+//            } else {
+//                echo json_encode(['status'=>false,'msg'=>'wrong password']);
+//                return false;
+//            }
+//        } else {
+//            echo json_encode(['status'=>false,'msg'=>'username can\'t be empty']);
+//            return false;
+//        }
     }
 
 }

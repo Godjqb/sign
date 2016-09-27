@@ -22,9 +22,9 @@ if($tof){
     echo 0;
 }
 
-$arr=Factory::createDatabase()->select('users')->getResult();
-Factory::createDatabase()->exportArr($arr['result']);
-echo $arr['num'];
+//$arr=Factory::createDatabase()->select('users')->getResult();
+//Factory::createDatabase()->exportArr($arr['result']);
+//echo $arr['num'];
 
 
 //var_dump($arr);

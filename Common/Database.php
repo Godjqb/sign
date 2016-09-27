@@ -60,9 +60,14 @@ class Database{
     }
 
     public function select($tb,$row='*',$where=null,$orderBy=null){
-        $sql='SELECT '.$row.' From '.$tb;
-        $sql.=' '.$where;
-        $sql.=' '.$orderBy;
+        $sql='SELECT '.$row.' FROM '.$tb;
+        if($where){
+            $sql.=' WHERE '.$where;
+        }
+        if($orderBy){
+            $sql.=' ORDER BY '.$orderBy;
+        }
+        //echo $sql;
         $res=$this->query($sql);
         if(!$res){
             return $this->error();
