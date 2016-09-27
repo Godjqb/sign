@@ -10,8 +10,7 @@ namespace Common;
 class User{
     protected static $users;
 
-    private $id;
-//,$user,$email,$tel,$psw,$lasttime,$regtime,$level,$moreinfo
+    private $id,$user,$email,$tel,$psw,$lasttime,$regtime,$level,$moreinfo;
 
     private function __construct(){}
     private function __clone(){}
@@ -38,17 +37,18 @@ class User{
         } else return false;
     }
 
-    public function regUser($username,$password,$email,$level=0){
+    public function regUser($username,$password,$email,$tel,$level=0){
         $regtime=time();
         $token=md5($username.$password.$regtime);
         $data=array(
-            'username'=>$username,
-            'password'=>$password,
-            'email'=>$email,
+            'username'=>'"'.$username.'"',
+            'password'=>'"'.$password.'"',
+            'email'=>'"'.$email.'"',
+            'telephone'=>$tel,
             'regtime'=>$regtime,
-            'token'=>$token,
+            'token'=>'"'.$token.'"',
             'level'=>$level,
-            'moreinfo'=>"empty"
+            'moreinfo'=>"'empty'"
         );
         return Factory::createDatabase()->insert("users",$data);
     }
@@ -75,10 +75,6 @@ class User{
             echo json_encode(['status'=>false,'msg'=>'username can\'t be empty']);
             return false;
         }
-    }
-
-    public static function test(){
-        echo 1;
     }
 
 }

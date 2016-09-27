@@ -7,10 +7,10 @@
  */
 //namespace Common;
 
-define('BASEDIR',__DIR__);
-require_once BASEDIR.'/Loader.php';
-spl_autoload_register('\\Common\\Loader::autoload');
-
+//define('BASEDIR',__DIR__);
+//require_once BASEDIR.'/Loader.php';
+//spl_autoload_register('\\Common\\Loader::autoload');
+//
 
 //spl_autoload_register('\\Loader::autoload');
 //$test=User::getInstance();
