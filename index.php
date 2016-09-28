@@ -2,30 +2,34 @@
 /**
  * Created by PhpStorm.
  * User: godjqb
- * Date: 16-9-26
- * Time: 下午10:00
+ * Date: 16-7-23
+ * Time: 上午8:59
  */
-use Common\Factory;
-define('BASEDIR',__DIR__);
-require_once BASEDIR.'/Common/Loader.php';
-spl_autoload_register('\\Common\\Loader::autoload');
 
-//Factory::createDatabase()->insert('members',['name'=>"'me'",'age'=>21]);
-//Factory::createDatabase()->update('members',['brithday'=>"'2000-09-21'"],['name'=>"'rubi'"]);
-//Factory::createDatabase()->delete('members',['name'=>"'me'"]);
+?>
 
-//Factory::createUser()->regUser('like','love','456@123.com',1234567890);
-$tof=Factory::createUser()->signIn('like','love');
-if($tof){
-    echo 1;
-} else {
-    echo 0;
-}
-
-//$arr=Factory::createDatabase()->select('users')->getResult();
-//Factory::createDatabase()->exportArr($arr['result']);
-//echo $arr['num'];
-
-
-//var_dump($arr);
-//print_r($arr);
+<!doctype html>
+    <html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+<body>
+<div>
+    <form method="post" action="">
+        <label for="user">Username:</label>
+        <input type="text" id="user" name="user" value="<?php echo $user;?>"/>
+        <span class="err">*<?php echo $userErr;?></span>
+        <br />
+        <label for="psw">Password:</label>
+        <input type="password" id="psw" name="psw" value="<?php echo $psw;?>"/>
+        <span class="err">*<?php echo $pswErr;?></span>
+        <br />
+        <input type="submit" name="submit" value="Login">
+        <input type="button" value="Regist" onclick="window.location.href='regist.php'">
+<!--        <button><a href="regist.php">Regist</a></button>-->
+    </form>
+</div>
+</body>
+</html>

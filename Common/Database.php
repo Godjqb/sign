@@ -61,13 +61,13 @@ class Database{
 
     public function select($tb,$row='*',$where=null,$orderBy=null){
         $sql='SELECT '.$row.' FROM '.$tb;
-        if($where){
+        if(isset($where)&&!empty($where)){
             $sql.=' WHERE '.$where;
         }
-        if($orderBy){
+        if(isset($orderBy)&&!empty($orderBy)){
             $sql.=' ORDER BY '.$orderBy;
         }
-        //echo $sql;
+//        echo $sql;
         $res=$this->query($sql);
         if(!$res){
             return $this->error();
@@ -93,9 +93,20 @@ class Database{
     }
 
     public function insert($tb,$data){
+        $sql='INSERT '.$tb;
         $keys=implode(',',array_keys($data));
-        $value=implode(',',array_values($data));
-        $sql='INSERT '.$tb.' ('.$keys.') VALUES ('.$value.');';
+        if(!is_null($keys)){
+            $sql.=' ('.$keys.')';
+        }
+        $values=array_values($data);
+        for ($i=0;$i<count($values);$i++){
+            if(is_string($values[$i])){
+                $values[$i]='"'.$values[$i].'"';
+            }
+        }
+        $values=implode(',',$values);
+        $sql.=' VALUES ('.$values.');';
+//        echo $sql;
         if($this->query($sql)){
             return true;
         } else {
